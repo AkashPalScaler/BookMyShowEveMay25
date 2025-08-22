@@ -12,7 +12,8 @@ import java.util.List;
 @Entity(name="bms_user")
 public class User extends BaseModel {
     private String name;
-    private String number;
+    private String email;
+    private String password;
     @OneToMany(mappedBy = "bookedBy")
     private List<Booking> booking;
 }

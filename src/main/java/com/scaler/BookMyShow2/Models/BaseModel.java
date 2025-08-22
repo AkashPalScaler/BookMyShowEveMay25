@@ -1,5 +1,7 @@
 package com.scaler.BookMyShow2.Models;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
@@ -18,6 +20,7 @@ import java.util.Date;
 @MappedSuperclass
 public class BaseModel {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     @CreationTimestamp
     Date createdAt;
