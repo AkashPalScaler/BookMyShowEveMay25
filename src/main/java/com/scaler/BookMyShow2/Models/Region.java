@@ -12,6 +12,6 @@ import java.util.List;
 @Entity
 public class Region extends BaseModel{
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "region")
     List<Theatre> theatres;
 }

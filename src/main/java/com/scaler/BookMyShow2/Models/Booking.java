@@ -15,7 +15,7 @@ public class Booking extends BaseModel {
     @ManyToOne
     private User bookedBy;
     // Booking 1:M ShowSeat
-    @OneToMany
+    @OneToMany(mappedBy = "booking")
     private List<ShowSeat> showSeats;
     // Movie, screen, theatre, show, seats - all this can be gotten from a showSeat
     private Double amount;

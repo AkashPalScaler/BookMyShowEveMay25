@@ -2,6 +2,7 @@ package com.scaler.BookMyShow2.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,5 +16,7 @@ public class Theatre extends BaseModel {
     private String name;
     @ManyToMany // M : M
     private List<Movie> movies;
+    @ManyToOne
+    private Region region;
 
 }

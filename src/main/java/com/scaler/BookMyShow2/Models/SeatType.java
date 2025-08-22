@@ -10,3 +10,4 @@ import lombok.Setter;
 public class SeatType extends BaseModel {
     private String type;
 }
+// SeatType.REGULAR

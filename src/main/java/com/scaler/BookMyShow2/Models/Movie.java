@@ -15,6 +15,7 @@ import java.util.List;
 public class Movie extends BaseModel{
     private String name;
     private Integer durationMins;
+    @ElementCollection
     private List<String> actors;
     private Double rating;
     @Enumerated(EnumType.ORDINAL)
